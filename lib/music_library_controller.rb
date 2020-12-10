@@ -127,7 +127,7 @@ class MusicLibraryController
   input = gets.strip.to_i
 
   # if input > 0 && input <= Song.all.length
-  if (1..Song.all.uniq.length).include?(input)
+  if (1..Song.all.length).include?(input)
     array = Song.all.sort{|a, b| a.name <=> b.name}
       # binding.pry
       song = array[input-1]
