@@ -131,7 +131,7 @@ class MusicLibraryController
     array = Song.all.sort{|a, b| a.name <=> b.name}
 
       song = array[input+2]
-     puts "Playing #{song.name} by #{song.artist.name}" if song
+     puts "Playing #{song.name} by #{song.artist.name}"
 end
 end
 end
