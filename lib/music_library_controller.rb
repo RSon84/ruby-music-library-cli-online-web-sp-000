@@ -131,7 +131,7 @@ class MusicLibraryController
     array = Song.all.sort{|a, b| a.name <=> b.name}
       # binding.pry
     song = array[input-1]
-    puts "Playing #{song.name} by #{song.artist.name}"
+    puts "Playing #{song.name} by #{song.artist.name}" if song
   end
 end
 
